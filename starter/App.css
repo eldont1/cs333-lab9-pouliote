@@ -1,0 +1,27 @@
+.App {
+  text-align: center;
+  padding: 24px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+.form input {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.form button {
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.error {
+  color: crimson;
+}
