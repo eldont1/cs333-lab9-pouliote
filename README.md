@@ -367,8 +367,10 @@ and change `<h1>Hello</h1>` to:
 TODO: click Login with the Username box empty, then type a name and click Login again.
 
 Question 8: what happens with the box empty? With a name? Which line stops the empty one from logging in?
+- When the box is empty, the red text appears saying to please type in a username. With a name, it passes on to the logged in screen, where it says "hello, eldon!", since I typed eldon for my username. The line in Login.jsx's handleClick function that returns early stops the login with no username, since it breaks out of the function without executing the rest. 
 
 Question 9: `Login` has its own `username`, and `App` has its own `username`. How does the name get from one to the other?
+- When entering a username in the box, handleChange is called, which updates the username in Login.jsx. Clicking login (the button) calls onLogin with the username as an argument. This gets passed on to handleLogin in App.jsx, which updates the username in App.jsx.
 
 Your whole `App.jsx` should look like this now (with your own console.logs if you added more):
 

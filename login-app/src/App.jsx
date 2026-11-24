@@ -8,13 +8,17 @@ console.log("The hour is", hour);
 function App() {
   // isLoggedIn starts out false. setIsLoggedIn changes it and redraws the page.
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [username, setUsername] = useState("");
   console.log("App drew the page, isLoggedIn is", isLoggedIn);
 
-  function handleLogin() {
+  // log the login, set the username, and change login status (true)
+  function handleLogin(name) {
     console.log("Login clicked");
+    setUsername(name);
     setIsLoggedIn(true);
   }
 
+  // log the logout, and change login status (false)
   function handleLogout() {
     console.log("Log out clicked");
     setIsLoggedIn(false);
@@ -25,7 +29,7 @@ function App() {
     <div className="App">
       {isLoggedIn ? (
         <div>
-          <h1>Hello</h1>
+          <h1>Hello, {username}!</h1>
           <button onClick={handleLogout}>Log out</button>
         </div>
       ) : (
