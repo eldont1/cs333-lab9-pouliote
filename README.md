@@ -146,6 +146,12 @@ and in `renderCondition`, replace the whole `return ( <form ... </form> );` in t
 The page should look the same.
 
 Question 3: `App` uses `Login`, and `Login` uses `Input`. What props does each `Input` get? Where in the page does each one end up?
+- Each prop is logged, but they're also in `Login.jsx`:
+```
+      <Input type="text" placeholder="Username" />
+      <Input type="password" placeholder="Password" />
+```
+- Each one ends up in the box labeled "Username" or "Password". Those are the input props.
 
 Commit: `Part 3: Login and Input components`
 
