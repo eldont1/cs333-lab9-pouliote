@@ -93,6 +93,7 @@ Save. You should see only the form.
 5. TODO: change `const isLoggedIn = false;` to `true` and save. Then put it back to `false`.
 
 Question 2: what did you see with `true`? With `false`? Why does `renderCondition()` need curly braces around it in `App`?
+- When isLoggedIn was true, the page just said `Hello`. With false, the page showed the login form. The function needs the braces because it's an expression.
 
 Commit: `Part 2: if/else`
 
