@@ -176,6 +176,7 @@ function App() {
 The page should look the same. TODO: flip `isLoggedIn` to `true` and back to `false` again to check.
 
 Question 4: read `{isLoggedIn ? <h1>Hello</h1> : <Login />}` out loud in plain English. What does it say?
+- If the value of isLoggedIn is `true`, use `<h1>Hello</h1>`. If `false`, use `<Login />`
 
 10. `&&`. Sometimes you want to show something or nothing at all. Above `function App() {` (not inside it), add:
 
@@ -193,6 +194,7 @@ and under the `{isLoggedIn ? ... }` line, add:
 TODO: look at the hour in the Console. Change `17` to a number that makes the message show up now, then one that makes it go away.
 
 Question 5: when does the `<p>` show up, and when does nothing show up? Why is `&&` handier than a ternary here?
+- The `<p>` shows up if the hour returned by `new Date().getHours();` is greater than or equal to 17, or 5:00 PM. Before that, nothing will show up. The double ampersand is nice here because us lazy JavaScript developers don't want to use the extra syntax of a ternary, and it does the same job -- if the first condition is true, then the part after `&&` is given to us. 
 
 Commit: `Part 4: ternary and &&`
 
