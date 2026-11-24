@@ -52,6 +52,7 @@ cp starter/App.jsx starter/App.css login-app/src/
 Your page should show Hello and a form with Username, Password and a Login button.
 
 Question 1: type anything in the boxes and click Login. What happens to the page and to what you typed? (Look at the address bar too.)
+- The page reloads, getting rid of the text. In the address bar, once the login form is submitted, a single `?` is appended. Nothing happens in the console.
 
 Commit: `Part 1: login app`
 
