@@ -263,8 +263,10 @@ function App() {
 Click Login, then Log out, a few times. Watch the Console.
 
 Question 6: what does the Console print each time you click? Why does "App drew the page" show up again after every click? (You'll probably see each one twice. Same as Lab 8: that's React double-checking your code while you develop.)
+- It prints "App drew the page, isLoggedIn is true/false". It shows up again after each click because App redraws the page. Whenever it gets called, that console.log shows up. 
 
 Question 7: the state lives in `App`, but the Login button is in `Login`. How does clicking the button in `Login` change `isLoggedIn` in `App`? (Follow `handleLogin` from `App` to the button.)
+- Because the prop from the login button gets used, which calls handleLogin, which changes the value of isLoggedIn.
 
 Commit: `Part 5: useState`
 
